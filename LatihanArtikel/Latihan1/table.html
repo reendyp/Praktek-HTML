@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>cara menggunakan tag table</h2>
+    <p>unsur pada table</p>
+    <img src="perbedaan-baris-kolom-dan-sel-pada-tabel-html.webp"
+    alt="Unsur pada tabel" title="unsur pada tabel" width="20%">
+    <hr>
+    <p>Contoh tabel bentuk simple</p>
+    <!--tabel terbagi menjadi dua yaitu simple dan kompleks-->
+    <!--table simple. tr = table row = untuk membuat baris. td = table data = untuk membuat kolom-->
+    <table>
+        <tr>
+            <td>baris1,kolom1</td>
+            <td>baris1,kolom2</td>
+        </tr>
+        <tr>
+            <td>baris2,kolom1</td>
+            <td>baris2,kolom2</td>
+        </tr>
+    </table> <hr>
+    <p>Contoh table kompleks</p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Kolom1</th>
+                <th>Kolom2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Baris1</th>
+                <td>Baris1,kolom1</td>
+                <td>Baris1,kolom2</td>
+            </tr>
+            <tr>
+                <th>baris2</th>
+                <td>baris2,kolom1</td>
+                <td>baris2,kolom2</td>
+            </tr>
+        </tbody>
+    </table> <hr>
+    <h2>attribute pada table</h2>
+    <p> 5 attribute yang bisa ditambahkan didalam table yaitu
+        (border, cellspacing, cellpadding - gunakan css), colspand, rowspan dll</p>
+    <!--ada 5 attribute yang bisa ditambahkan didalam table yaitu
+        (border, cellspacing, cellpadding - gunakan css), colspan,rowspan-->
+        <!-- border untuk membatasi table-->
+        <table border="1">
+            <tr>
+                <td>baris1,kolom1</td>
+                <td>baris1,kolom2</td>
+            </tr>
+            <tr>
+                <td>baris2,kolom1</td>
+                <td>baris2,kolom2</td>
+            </tr>
+        </table>  
+        <hr>  
+        <p>penggunaan cellspacing</p>
+        <!--cellspacing memberikan jarak antar cell-->
+        <table border="1" cellspacing="10">
+            <tr>
+                <td>baris1,kolom1</td>
+                <td>baris1,kolom2</td>
+            </tr>
+            <tr>
+                <td>baris2,kolom1</td>
+                <td>baris2,kolom2</td>
+            </tr>
+        </table>
+        <br>
+        <table border="3" cellspacing="0">
+            <tr>
+                <td>baris1,kolom1</td>
+                <td>baris1,kolom2</td>
+            </tr>
+            <tr>
+                <td>baris2,kolom1</td>
+                <td>baris2,kolom2</td>
+            </tr>
+        </table>
+        <hr>
+        <p>penggunaan cellpadding</p>
+        <!--untuk memberikan ruang pada tiap cell-->
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>baris1,kolom1</td>
+                <td>baris1,kolom2</td>
+            </tr>
+            <tr>
+                <td>baris2,kolom1</td>
+                <td>baris2,kolom2</td>
+            </tr>
+        </table>
+        <hr>
+        <p>penggunaan colspan dan rowspan</p>
+        <!--fungsinya untuk menggabungkan baris dan kolom-->
+        <p>sebekum menggunakan fungsi colspan dan rowspan</p>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td>2,2</td>
+                <td>2,3</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+        <p>sesudah menggunakan fungsi rowspan dan colspan</p>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td rowspan="3">rowspan 1,1;2,1;3,1</td>
+                <td colspan="2">colspan 1,2 dan 1,3</td>
+            </tr>
+            <tr>
+                
+                <td>2,2</td>
+                <td>2,3</td>
+            </tr>
+            <tr>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>latihan web programming unpas membuat table</h2>
+        <table border="1" cellspacing="0" cellpadding="6">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+                <td>1,4</td>
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td rowspan="2" colspan="2"><center>?</center></td>
+                <td>2,4</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                
+                <td>3,4</td>
+            </tr>
+            <tr>
+                <td>4,1</td>
+                <td>4,2</td>
+                <td>4,3</td>
+                <td>4,4</td>
+            </tr>
+        </table>
+</body>
+</html>

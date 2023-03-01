@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Penggunaan tag form</h2>
+    <!-- ada 5 elemen didalam tag form; input, textarea, select, button, label-->
+    <!--didalam input <input type=""> ada type; text, password,radio,checkbox.submit,reset,button-->
+    <form action="">
+        <!--penggunaan label harus sama dengan attribute id pada input-->
+        <label for="username">username :</label>
+        <input type="text" id="username"> 
+        <br>
+        <label for="password">password :</label>
+        <input type="password" id="password">
+        <br>
+        <input type="radio" name="jenis kelamin" id="pria"><label for="pria">pria</label>
+        <input type="radio" name="jenis kelamin" id="wanita"><label for="wanita">wanita</label>
+        <br>
+        <input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+        <input type="checkbox" id="futsal"><label for="futsal">futsal</label>
+        <input type="checkbox" id="berenang"><label for="berenang">berenang</label>
+        <br>
+        <input type="submit" value="kirim!">
+        <button type="submit">kirim</button>
+    </form>
+</body>
+</html>
